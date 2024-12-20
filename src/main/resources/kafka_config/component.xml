@@ -24,6 +24,10 @@
             <description>Configure the Kafka producer</description>
             <hidden>true</hidden>
         </component>
+        <component name="testconnection">
+            <file>testconnection.xml</file>
+            <description>Test the connection to the Kafka producer</description>
+        </component>
     </subComponents>
 </component>
 
