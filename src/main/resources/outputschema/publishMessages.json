@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "publishMessages",
+    "description": "Schema representing the output structure of a publishMessages operation.",
+    "properties": {
+      "attributes": {
+        "type": "object",
+        "description": "Metadata about the publishMessages operation.",
+        "properties": {
+          "topic": {
+            "type": "string",
+            "description": "The name of the topic to which the message was published."
+          },
+          "offset": {
+            "type": "integer",
+            "description": "The offset of the message in the topic."
+          },
+          "partition": {
+            "type": "integer",
+            "description": "The partition of the topic to which the message was published."
+          }
+        },
+        "required": [
+            "topic",
+            "offset",
+            "partition"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "attributes"
+    ],
+    "additionalProperties": false
+  }

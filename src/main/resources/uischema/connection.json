@@ -2,6 +2,7 @@
   "connectorName": "kafkaTransport",
   "connectionName": "kafka",
   "title": "Kafka Connection",
+  "testConnectionEnabled" : true,
   "help": "<h1>Kafka Connector</h1> <b>The Kafka connector allows you to access the Kafka Producer API through WSO2 EI and acts as a message producer that facilitates message publishing. The Kafka connector sends messages to the Kafka brokers.</b>",
   "elements": [
     {
